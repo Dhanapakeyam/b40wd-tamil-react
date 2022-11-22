@@ -18,6 +18,10 @@ function App() {
   {
     name: "Sanmika",
     pic: "https://m.media-amazon.com/images/I/81K2hJBAduL.png"
+  },
+  {
+    name: "Yash",
+    pic: "https://i.pinimg.com/736x/5a/c4/d1/5ac4d1d1f59c170672ecd81d57b48f22--best-flowers-nice-flower.jpg"
   }]
   return (
     // <div className="App">
