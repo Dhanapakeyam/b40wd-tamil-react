@@ -36,10 +36,12 @@ function App() {
 
 function User({ name, pic }) {
   //const { name, pic } = props;
+  let [like, setLike] = useState(0);
   return (
     <section>
       <img className='user-profile-pic' src={pic} alt={name} />
       <h1>Hello,<span className='user-name'>{name}</span>💐💐</h1>
+      <button onClick={() => setLike(like + 1)}>👍<sup>{like}</sup></button>
     </section>
   )
 }
