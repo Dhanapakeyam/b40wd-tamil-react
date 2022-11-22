@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -40,8 +41,10 @@ function User({ name, pic }) {
   return (
     <section>
       <img className='user-profile-pic' src={pic} alt={name} />
-      <h1>Hello,<span className='user-name'>{name}</span>💐💐</h1>
-      <button onClick={() => setLike(like + 1)}>👍<sup>{like}</sup></button>
+      <span>
+        <h1>Hello,<span className='user-name'>{name}</span>💐💐</h1>
+        <button onClick={() => setLike(like + 1)}>👍<sup>{like}</sup></button>
+      </span>
     </section>
   )
 }
